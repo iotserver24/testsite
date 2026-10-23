@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "demo:rollback": "node scripts/demo-case.mjs rollback",
+    "demo:fix-only": "node scripts/demo-case.mjs fix-only"
   },
   "dependencies": {
     "next": "^15.2.0",
