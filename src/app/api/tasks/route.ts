@@ -22,7 +22,7 @@ export function GET(request: Request) {
   const status = new URL(request.url).searchParams.get("status");
   if (!status) {
     return NextResponse.json(
-      { ok: false, error: "Task service failed while listing tasks." },
+      { ok: false, error: "Task service failed while listing tasks for the live check." },
       { status: 500 }
     );
   }
